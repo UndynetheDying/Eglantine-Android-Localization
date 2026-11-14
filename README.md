@@ -17,6 +17,8 @@
 
 <h4 align="center">An experimental, free and open-source Nintendo Switch 2 emulator written in C++, derived from Eden, yuzu and Sudachi.</h4>
 
+<h4 align="center">Let me clarify: I DID NOT DO ANY REAL CODING WHEN I MADE THIS FORK. This fork (UndynetheDying's Android localization fork) was made to fix some localization errors that happened when the main project was branched from Eden.</h4>
+
 <p align="center">
   <a href="https://github.com/notsapinho/Eglantine/releases"><img src="https://img.shields.io/github/v/release/notsapinho/Eglantine?include_prereleases&label=latest%20build" alt="Latest build"></a>
   <a href="./LICENSE.txt"><img src="https://img.shields.io/badge/license-GPLv3-blue" alt="License: GPLv3"></a>

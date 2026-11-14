@@ -190,8 +190,8 @@ android {
             isDefault = true
             minSdk = 33
 
-            manifestPlaceholders += mapOf("appNameBase" to "Eden")
-            resValue("string", "app_name_suffixed", "Eden")
+            manifestPlaceholders += mapOf("appNameBase" to "Eglantine")
+            resValue("string", "app_name_suffixed", "Eglantine")
 
             ndk {
                 abiFilters += listOf("arm64-v8a")
@@ -201,8 +201,8 @@ android {
         create("genshinSpoof") {
             dimension = "version"
             minSdk = 35
-            manifestPlaceholders += mapOf("appNameBase" to "Eden Optimized")
-            resValue("string", "app_name_suffixed", "Eden Optimized")
+            manifestPlaceholders += mapOf("appNameBase" to "Eglantine Optimized")
+            resValue("string", "app_name_suffixed", "Eglantine Optimized")
             applicationId = "com.miHoYo.Yuanshen"
 
             externalNativeBuild {
@@ -219,8 +219,8 @@ android {
         create("legacy") {
             dimension = "version"
             minSdk = 29
-            manifestPlaceholders += mapOf("appNameBase" to "Eden Legacy")
-            resValue("string", "app_name_suffixed", "Eden Legacy")
+            manifestPlaceholders += mapOf("appNameBase" to "Eglantine Legacy")
+            resValue("string", "app_name_suffixed", "Eglantine Legacy")
             applicationId = "dev.legacy.eden_emulator"
 
             externalNativeBuild {
@@ -242,8 +242,8 @@ android {
 
         create("chromeOS") {
             dimension = "version"
-            manifestPlaceholders += mapOf("appNameBase" to "Eden ChromeOS")
-            resValue("string", "app_name_suffixed", "Eden ChromeOS")
+            manifestPlaceholders += mapOf("appNameBase" to "Eglantine ChromeOS")
+            resValue("string", "app_name_suffixed", "Eglantine ChromeOS")
 
             ndk {
                 abiFilters += listOf("x86_64")
@@ -265,7 +265,7 @@ android {
     }
 
     productFlavors.all {
-        val currentName = manifestPlaceholders["appNameBase"] as? String ?: "Eden"
+        val currentName = manifestPlaceholders["appNameBase"] as? String ?: "Eglantine"
         val suffix = if (isNightly) " Nightly" else ""
 
         // apply nightly suffix I/A
